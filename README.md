@@ -3,52 +3,20 @@
 </div>
 
 # _DOC - dynamic organization chart_
+DOC is a web-based applicaiton users can interact with as an employee directory and interactive organization chart.
 
-## Employee Directory
-The Dynamic Organization Chart (DOC) serves as a searchable directory of employees and business units. Powered by [Elasticsearch](https://www.elastic.co/), DOC is robust to spelling mistakes, allowing users to find employees and business units with ease.
+## Features 
+DOC serves as a searchable directory of employees and business units. Powered by [Elasticsearch](https://www.elastic.co/), DOC is robust to spelling mistakes, allowing users to find employees and business units with ease.
 
-## Interactive Organization Chart
 Once users have found the employee or business unit they are searching for, they can instantly see where in the organization that employee or business unit resides. Additionally, users can explore the organization chart interactively, and then see all of the people who belong to a particular business unit.
 
-## Open Data
-This project is built on top of the GEDS [dataset](https://open.canada.ca/data/en/dataset/8ec4a9df-b76b-4a67-8f93-cdbc2e040098) which is available under the [Canada Open Government License](https://open.canada.ca/en/open-government-licence-canada).
-
-## Open Source
-This project is built entirely using open source tools such as [React](https://reactjs.org), [d3](https://d3js.org), [Flask](https://palletsprojects.com/p/flask/) and [Elasticsearch](https://www.elastic.co/).
-
-## Web Based
-DOC is entirely web-based. Once completed, users can interact with the tool by simply visiting a web page on their browser.
-                            
-## Built entirely on the GEDS dataset
-Every 24 hours, a python script downloads a csv file from [Canada's Open Data Portal](https://open.canada.ca/en/open-data), processes it to extract the Government of Canada's organization structure, and writes tables to a SQL database. Since all application data are extracted from a regularly updated source, there is no maintenance work required to keep reference data up to date.
-
-## Elasticsearch and REST API
-Elasticsearch, an open source search framework, is used to create a searchable index over employee names and organiational units. Additionally, a REST API is created using Flask to provide specific resources to the front-end application.
-                  
-## d3 and react for the user interface
-The front-end of DOC is built aroun d3, a javascript library for creating interactive data visualizations. The scripts that process the original GEDS data output organizational charts in a JSON format that can be consumed by d3. This visualization is embedded inside of a  React application.
-
-                    
-## Interested in this project?
-Are you a Canadian public servant?
-Continue work on this project! Although a beta version of the application is almost complete, there is still a lot of work to do. Send an email, you can find our contact information on the Github repository for this project.
-
-
-
+## Open Data and Open Source
+This project is built on top of the GEDS [dataset](https://open.canada.ca/data/en/dataset/8ec4a9df-b76b-4a67-8f93-cdbc2e040098) which is available under the [Canada Open Government License](https://open.canada.ca/en/open-government-licence-canada). DOC is built entirely using open source tools such as [React](https://reactjs.org), [d3](https://d3js.org), [Flask](https://palletsprojects.com/p/flask/) and [Elasticsearch](https://www.elastic.co/).
+                          
 ## Want to reuse the project code?
-No problem! This repository is open sourced under the [???] license. While the project is organized around GEDS, multiple components could be repurposed for organizational charts in other organizations.
+No problem! This repository is open sourced under the [???-ENTER] license. While the project is organized around GEDS, multiple components could be repurposed for organizational charts in other organizations.
 
-
-
-
-
-
-
-
-
-
-
-## High-level Architecture
+### High-level Architecture
 This repository links together several repositories that are all part of the same project. The related repositories can be found below:
 
 - [User Interface (React and d3)](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart-ui)
@@ -69,3 +37,12 @@ digraph G {
 "Front End" -> "Flask API";
 "Front End" -> "Elasticsearch";
 }'/> -->
+
+## d3 and react for the user interface
+The front-end of DOC is built aroun d3, a javascript library for creating interactive data visualizations. The scripts that process the original GEDS data output organizational charts in a JSON format that can be consumed by d3. This visualization is embedded inside of a  React application.
+
+## Elasticsearch and REST API
+Elasticsearch, an open source search framework, is used to create a searchable index over employee names and organiational units. Additionally, a REST API is created using Flask to provide specific resources to the front-end application.
+                  
+## Updated
+Every 24 hours, a python script downloads a csv file from [Canada's Open Data Portal](https://open.canada.ca/en/open-data), processes it to extract the Government of Canada's organization structure, and writes tables to a SQL database. Since all application data are extracted from a regularly updated source, there is no maintenance work required to keep reference data up to date.
