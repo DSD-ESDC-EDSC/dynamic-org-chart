@@ -14,8 +14,7 @@ Once users have found the employee or business unit they are searching for, they
 This project is built on top of the GEDS [dataset](https://open.canada.ca/data/en/dataset/8ec4a9df-b76b-4a67-8f93-cdbc2e040098) which is available under the [Canada Open Government License](https://open.canada.ca/en/open-government-licence-canada).
 
 ## Open Source
-This project is built entirely using open source tools such as [React](https://reactjs.org), [d3](https://d3js.org),[Flask](https://palletsprojects.com/p/flask/) and [Elasticsearch](https://www.elastic.co/).
-
+This project is built entirely using open source tools such as [React](https://reactjs.org), [d3](https://d3js.org), [Flask](https://palletsprojects.com/p/flask/) and [Elasticsearch](https://www.elastic.co/).
 
 ## Web Based
 DOC is entirely web-based. Once completed, users can interact with the tool by simply visiting a web page on their browser.
