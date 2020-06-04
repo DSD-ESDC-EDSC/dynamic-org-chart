@@ -6,7 +6,7 @@
 DOC is a web-based applicaiton users can interact with as an employee directory and interactive organization chart.
 
 ## Features 
-DOC serves as a searchable directory of employees and business units. Powered by [Elasticsearch](https://www.elastic.co/), DOC is robust to spelling mistakes, allowing users to find employees and business units with ease.
+DOC serves users a searchable directory of employees and business units. Powered by [Elasticsearch](https://www.elastic.co/), the tool is robust to spelling mistakes, allowing users to find employees and business units with ease.
 
 Once users have found the employee or business unit they are searching for, they can instantly see where in the organization that employee or business unit resides. Additionally, users can explore the organization chart interactively, and then see all of the people who belong to a particular business unit.
 
@@ -16,7 +16,7 @@ This project is built on top of the GEDS [dataset](https://open.canada.ca/data/e
 ## Want to reuse the project code?
 No problem! This repository is open sourced under the [???-ENTER] license. While the project is organized around GEDS, multiple components could be repurposed for organizational charts in other organizations.
 
-### High-level Architecture
+# High-level Architecture
 This repository links together several repositories that are all part of the same project. The related repositories can be found below:
 
 - [User Interface (React and d3)](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart-ui)
