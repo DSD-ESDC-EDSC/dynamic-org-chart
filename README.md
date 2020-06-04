@@ -5,7 +5,7 @@
 # _DOC - dynamic organization chart_
 DOC is a web-based applicaiton users can interact with as an employee directory and interactive organization chart.
 
-## Features 
+## Overview 
 DOC serves users a searchable directory of employees and business units. Powered by [Elasticsearch](https://www.elastic.co/), the tool is robust to spelling mistakes, allowing users to find employees and business units with ease.
 
 Once users have found the employee or business unit they are searching for, they can instantly see where in the organization that employee or business unit resides. Additionally, users can explore the organization chart interactively, and then see all of the people who belong to a particular business unit.
