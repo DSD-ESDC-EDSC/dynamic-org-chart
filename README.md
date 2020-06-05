@@ -110,7 +110,7 @@ The code in this project developed by the Data Science team, which is being redi
 
 The user interface is a [React](https://reactjs.org) application that makes use of Javascript's [d3](https://d3js.org) data visualization library to create the interactive org chart. The REST API is built on Python's [Flask](https://palletsprojects.com/p/flask/) microframework. The project makes use of [Elasticsearch](https://www.elastic.co/) as an open source search framework, and has used [SQLite](https://www.sqlite.org/index.html) as an open source relational database for development purposes. As an object relational mapper (ORM), [SQLAlchemy](https://www.sqlalchemy.org/) was used, so migration to a production database is adaptable to any of the flavours of SQL databases that are supported by SQLAlchemy.
 
-Many open source software and libraries we used to create DOC and must be ackowledged. These artificats, along with their corresponding open licenses (where one was found), are listed below. Users are advised to consult original sources for official information.
+Many open source software and libraries were used to create DOC. Acknowledgement to these artifacts, along with their corresponding open licenses (where one was found), is listed below. Users are advised to consult original sources for official information.
 
 Attribution statements for other software and code artifacts used:
 - [Elasticsearch Docker Image](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html) - [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0)
