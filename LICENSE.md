@@ -1,4 +1,4 @@
-# Terms and Conditions of Use 
+# Terms and Conditions of Use - dynamic-org-chart
 
 Unless otherwise noted, program source code included in this repository is covered under Crown Copyright, Government of Canada, and is distributed under the MIT License.
 
