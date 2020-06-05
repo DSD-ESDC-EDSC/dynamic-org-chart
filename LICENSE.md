@@ -30,5 +30,5 @@ SOFTWARE.
 
 *****
 
-...French translaiton to come
+...French translation to come
 
