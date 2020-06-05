@@ -7,23 +7,23 @@
 
 ## Project Overview
 
-The Dynamic Organizational Chart (DOC) provides users the ability to search derived org charts for many Government of Canada departments and is executed as an open project by XXX. It is built using the same dataset that underpins the [Government Electronic Directory Services (GEDS)](https://open.canada.ca/data/en/dataset/8ec4a9df-b76b-4a67-8f93-cdbc2e040098), which is updated every 24 hours and made available on the [Canada Open Data Portal](https://open.canada.ca/en/open-data) under the Government of Canada's [Open Government License](https://open.canada.ca/en/open-government-licence-canada). DOC consists of two major components:
+The Dynamic Organizational Chart (DOC) provides users the ability to search derived org charts for many Government of Canada departments and is executed as an open project by the Data Science Division within the Chief Data Office of Employment and Social Development Canada (ESDC). It is built using the same dataset that underpins the [Government Electronic Directory Services (GEDS)](https://open.canada.ca/data/en/dataset/8ec4a9df-b76b-4a67-8f93-cdbc2e040098), which is updated every 24 hours and made available on the [Canada Open Data Portal](https://open.canada.ca/en/open-data) under the Government of Canada's [Open Government License](https://open.canada.ca/en/open-government-licence-canada). DOC consists of two major components:
 
 1. Several programs that download and process the open GEDS dataset every 24 hours into a hierarchical format that can be used to link employees to organizational units and vise versa.
 2. A web application that, using the processed GEDS data, allows users to dynamically navigate the derived org charts as well as search the directory of business units and employees. The application makes it possible to cross reference these two information sources; users can search for employees/business units and see where they are on an org chart, or they can navigate the org chart and see which employees belong to a given business unit.
 
-DOC, once fully realized, makes the task of finding who works where and on what dynamic, visual, and ultimately more efficient.
+DOC, once fully realized, makes the task of finding who works where and on what dynamic, visual, and more efficient.
 
 ## History
 
-DOC began as an offshoot of a related project aimed to improve the efficiency of new employee onboarding in the XXX. During testing on the related project, many new employees pointed out that they couldn't find any clear solution to identify where other employees work and how different parts of the organization relate to eachother.
+DOC began as an offshoot of a related project aimed to improve the efficiency of new employee onboarding. During testing on the related project, many new employees pointed out that they couldn't find any clear solution to identify where other employees work and how different parts of the organization relate to eachother.
 
-Based on this, we wondered, what if there was an easy way for employees to search for other employees and business units and then automatically link this information to the organization's structure? Furthermore, we wondered if we could build this product using only open source software and open data in order to facilitate sharing, collaboration, and transparancy with all who might benefit from the end product or reuse of parts of its code - the term Open project is used to describe this paradigm. 
+Based on this, the team wondered, what if there was an easy way for employees to search for other employees and business units and then automatically link this information to the organization's structure? Furthermore, what if we could build this product using open source software and open data in order to facilitate sharing, collaboration, and transparancy with all who might benefit from the end product or reuse parts of its code - the term Open Project is used to describe this thought. 
 
 Motivated by these ideas, we built a prototype, tested it, and concluded that there was in fact some appetite for a new way to searth through and navigate the organization structure. Now, we have nearly completed the beta version of this product and are releasing all code used to create it.
 
 ## Motivation and Business Value
-As we examined existing tools that allow the navigation of GEDS data, we noticed a few key areas that could be improved upon. Listed below are the areas for improvement, and how DOC addresses them.
+As we examined existing tools that allow the navigation of GEDS data, the team noticed a few key areas that could be improved upon. Listed below are the areas for improvement, and how DOC addresses them.
 
 ### 1. Typos and Spelling Mistakes
 
@@ -39,13 +39,13 @@ This means that correct search results will appear even in the presence of small
 
 The web application for DOC features a dynamic, interative, and searchable organizational chart for the Canadian federal public service. The organization structure for the Canadian Federal Government is implicitly defined in the GEDS dataset, and the programs in DOC automatically extract this organization structure.
 
-This means that, as long as the information in GEDS is kept up to date by federal public servants, organizational charts for the entire public service are available through DOC. Additionally, since the GEDS dataset is updated every 24 hours, the org charts in DOC can be effortless up to date.
+This means that, as long as the information in GEDS is kept up to date, organizational charts for the entire public service are available through DOC. Additionally, since the GEDS dataset is updated every 24 hours, the org charts in DOC can be effortless up to date.
 
 ### 3. No Fast Way to Cross-Reference Employees With Organizational Structure
 
 > __There appears to be no straightforward way to cross-reference employee information with organizational information. Example use cases: a user wants to know who is the director that oversees a particular team or who to contact from a given team.__
 
-DOC was initially designed to solve exactly this problem. With a single click, users can identify where an employee works, where a business unit is in the organization, a who the team members are in a particular business unit. With DOC, it is extremely fast to link these two sources of information to one another.
+DOC was initially designed to solve exactly this problem. With a single click, users can identify where an employee works, where a business unit is in the organization, and who the team members are in a particular business unit. With DOC, it is extremely fast to link these two sources of information to one another.
 
 ## Literature Review & Related Findings
 
@@ -70,22 +70,22 @@ The org chart visualization supports pan and zoom functionality, so users can ex
 ![Pan and Zoom](gif/pan-and-zoom.gif)
 
 ### Search Employees
-Users can find employees with a free text search. Thanks to Elasticsearch, DOC is robust to many types of typos, spelling mistakes, as wellas variations of name formatting. The GIF below illustrates the earlier mentioned example of a search for "__jean moulec__" correctly returning a result for "__Jean Le Moullec__", even though the search term contains several spelling mistakes.
+Users can find employees with a free text search. Thanks to Elasticsearch, DOC is robust to many types of typos, spelling mistakes, as well as variations of name formatting. The GIF below illustrates the earlier mentioned example of a search for "__jean moulec__" correctly returning a result for "__Jean Le Moullec__", even though the search term contains several spelling mistakes.
 
 ![Search Employees #1](gif/name-search-1.gif)
 
-### Search Business Units (UNDER DEVELOPMENT)
+### Search Business Units 
 This functionality is implemented in the back-end but not yet in the front-end. Once complete it will funciton in the same way as one searches for employees but for business units.
 
-### See Who Works in a Given Business Unit
+### See Who Works in a Given Business Unit 
 It is possible to search with DOC in the opposite direction to what is mentioned above. Given a business unit, the user can see all of the people who work in that unit. Use cases for this include, for example, wanting to know who else works on an employee's team or wanting to find the manager of an employee. The GIF below illustrates, again using a member of the DOC development team, a search for "__brown, collin__" and correctly identifies his team members when clicking the "__See the team__" button.
 ![Search Employees #4](gif/name-search-4.gif)
 
 # Technical Details
-The next sections details the architecture, tech stack, and data used in DOC.
+The next sections details the architecture, tech stack (open source software), and open data used in DOC.
 
 ## High-level Architecture
-This repository links together several repositories that are all part of the same project. The related repositories can be found below:
+This repository links together several repositories that form that DOC Open Project. The related repositories can be found below:
 
 - [User Interface (React and d3)](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart-ui)
 - [Back-end API (Flask) for data on employees and organizations](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart-api)
@@ -106,24 +106,19 @@ digraph G {
 "Front End" -> "Elasticsearch";
 }'/> -->
 
-
-The three repositories for DOC can be found below:
-1. [User Interface](https://github.com/Collinbrown95/react-hooks-d3)
-2. [Application Back-end (REST API)](https://github.com/Collinbrown95/geds-api)
-3. [Programs to process the GEDS Data](https://github.com/Collinbrown95/process-geds-data)
-
-
 ## Open Source Software
-The code in this project, which is being redistributed under the open source MIT License, processes GEDS data into a hierarchical format that can be consumed by Javascript's d3 data visualization library. iAdditionally, the data from this csv can be used to populate several tables in a SQL database. Between these two data sources (and with the help of Elasticsearch to index employee names and organizational units), it is possible to link employees to organizational structure, and vice versa.
+The code in this project developed by the Data Science team, which is being redistributed under the open source MIT License, processes GEDS data into a hierarchical format that can be consumed by Javascript's d3 data visualization library. Additionally, the data from this csv can be used to populate several tables in a SQL database. Between these two data sources (and with the help of Elasticsearch to index employee names and organizational units), it is possible to link employees to organizational structure, and vice versa.
 
 The user interface is a [React](https://reactjs.org) application that makes use of Javascript's [d3](https://d3js.org) data visualization library to create the interactive org chart. The REST API is built on Python's [Flask](https://palletsprojects.com/p/flask/) microframework. The project makes use of [Elasticsearch](https://www.elastic.co/) as an open source search framework, and has used [SQLite](https://www.sqlite.org/index.html) as an open source relational database for development purposes. As an object relational mapper (ORM), [SQLAlchemy](https://www.sqlalchemy.org/) was used, so migration to a production database is adaptable to any of the flavours of SQL databases that are supported by SQLAlchemy.
 
-Attribution Statements (Other Software/Code Artifacts):
-- [Elasticsearch Docker Image](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html) - as far as I can tell, this is licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0)
-- [SQLite](https://sqlite.org/copyright.html) - Public Domain (no license)
-- [StackOverflow](https://stackoverflow.com/) - Depending on the date the content was posted, code artifacts on StackOVerflow appear to be distributed under some flavour of [Attribution-ShareAlike International Creative Commons License](https://creativecommons.org/licenses/by-sa/4.0/). Whenever significant snippets of code were borrowed directly from an answer, A link to the URL was posted in a docstring in the same file along with an acknowledgement giving credit to the original author.
+Many open source software and libraries we used to create DOC and must be ackowledged. These artificats, along with their corresponding open licenses (where one was found), are listed below. Users are advised to consult original sources for official information.
 
-Attribution Statements (Python and the libraries used in this project):
+Attribution statements for other software and code artifacts used:
+- [Elasticsearch Docker Image](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html) - [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0)
+- [SQLite](https://sqlite.org/copyright.html) - no license found
+- [StackOverflow](https://stackoverflow.com/) - [Attribution-ShareAlike International Creative Commons License](https://creativecommons.org/licenses/by-sa/4.0/). Whenever significant snippets of code were borrowed directly from an answer, A link to the URL was posted in a docstring in the same file along with an acknowledgement giving credit to the original author.
+
+Attribution Statements for Python and the libraries used:
 * All licenses here were obtained using the [pip-licenses](https://pypi.org/project/pip-licenses/) package (which itself is licensed under the MIT license).
 - [Python](https://docs.python.org/3/license.html) - Python Software License (PSF)
 - [pandas](https://github.com/pandas-dev/pandas/blob/master/LICENSE) - BSD license
@@ -139,9 +134,9 @@ Attribution Statements (Python and the libraries used in this project):
 
 Attribution Statements (JavaScript and the libraries used in this project):
 - [React](https://github.com/facebook/react/blob/master/LICENSE) - MIT
-- [react-fontawesome](https://github.com/FortAwesome/react-fontawesome/blob/master/LICENSE.txt) - MIT (as far as I can tell, not sure if the original FontAwesome library has a different set of restrictions)
+- [react-fontawesome](https://github.com/FortAwesome/react-fontawesome/blob/master/LICENSE.txt) - MIT
 - [d3](https://d3js.org/) - BSD
-- [react-bootstrap](https://github.com/react-bootstrap/react-bootstrap/blob/master/LICENSE) - MIT ([Bootstrap](https://getbootstrap.com/docs/4.0/about/license/) might be subject to separate license requirements, although looks pretty open at first pass).
+- [react-bootstrap](https://github.com/react-bootstrap/react-bootstrap/blob/master/LICENSE) - MIT ([Bootstrap](https://getbootstrap.com/docs/4.0/about/license/)
 - [react-dom](https://github.com/motorcycle/react-dom/blob/master/LICENSE.md) - MIT
 - [react-router](https://github.com/ReactTraining/react-router/blob/master/LICENSE) - MIT
 - [react-scripts](https://github.com/GraphCMS/react-scripts/blob/master/LICENSE) - MIT
