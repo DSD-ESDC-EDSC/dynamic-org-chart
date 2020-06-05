@@ -2,6 +2,8 @@
     <a href="https://github.com/DSD-ESDC-EDSC/dynamic-org-chart/blob/master/README.fr.md">Fr</a>
 </div>
 
+View as a [webpage](https://dsd-esdc-edsc.github.io/dynamic-org-chart/)
+
 # Project Overview
 
 The Dynamic Organizational Chart (DOC) provides users the ability to search derived org charts for many Government of Canada departments and is executed as an open project by the Data Science Division within the Chief Data Office of Employment and Social Development Canada (ESDC). It is built using the same dataset that underpins the [Government Electronic Directory Services (GEDS)](https://open.canada.ca/data/en/dataset/8ec4a9df-b76b-4a67-8f93-cdbc2e040098), which is updated every 24 hours and made available on the [Canada Open Data Portal](https://open.canada.ca/en/open-data) under the Government of Canada's [Open Government License](https://open.canada.ca/en/open-government-licence-canada). DOC consists of two major components:
@@ -143,4 +145,4 @@ Attribution Statements (JavaScript and the libraries used in this project):
 - [styled-components](https://github.com/styled-components/styled-components/blob/master/LICENSE) - MIT
 
 ## Open Data Sources
-This entire project is built off of the [GEDS dataset](https://open.canada.ca/data/en/dataset/8ec4a9df-b76b-4a67-8f93-cdbc2e040098), which is made available under the Government of Canada's [Open Data License](https://open.canada.ca/en/open-government-licence-canada). Every 24 hours, this dataset is updated on the Government of Canada's [Open Data Portal](https://open.canada.ca/en/open-data) as a single csv file.
+This entire project is built off of the [GEDS dataset](https://open.canada.ca/data/en/dataset/8ec4a9df-b76b-4a67-8f93-cdbc2e040098), which is made available under the Government of Canada's open data license - [Open Government Licence - Canada](https://open.canada.ca/en/open-government-licence-canada). Every 24 hours, this dataset is updated on the Government of Canada's [Open Data Portal](https://open.canada.ca/en/open-data) as a single csv file.
