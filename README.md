@@ -1,5 +1,5 @@
 <div style="text-align: right;">
-                                       <a href="https://github.com/DSD-ESDC-EDSC/dynamic-org-chart/blob/master/README.fr.md">Français</a>
+    <a href="https://github.com/DSD-ESDC-EDSC/dynamic-org-chart/blob/master/README.fr.md">Français</a>
 </div>
 
 View as a [webpage](https://dsd-esdc-edsc.github.io/dynamic-org-chart/)
