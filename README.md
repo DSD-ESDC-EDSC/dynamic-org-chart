@@ -13,14 +13,12 @@ DOC, once fully realized, makes the task of finding who works where and on what,
 
 # History
 
-DOC began as an offshoot of a related project aimed to improve the efficiency of new employee onboarding. During testing on the related project, many new employees pointed out that they couldn't find any clear solution to identify where other employees work and how different parts of the organization relate to eachother.
+DOC began as an offshoot of a related ChatBot project aimed to improve the efficiency of new employee onboarding. During testing on the ChatBot, many new employees pointed out that they couldn't find any clear solution to identify where other employees work and how different parts of the organization relate to eachother. Based on this finding, exploration began into creating an easy way for civil serants to search for other employees and business units and then automatically link this information to the organization's structure. Furthermore, so as to increase the availabilty and access of the tool, emphasis was placed on using open source software and open data in order to facilitate sharing, collaboration, and transparancy with all who might benefit from the end product or reuse parts of its code - the term Open Project is used to describe this thought. 
 
-Based on this, the team wondered, what if there was an easy way for employees to search for other employees and business units and then automatically link this information to the organization's structure? Furthermore, what if we could build this product using open source software and open data in order to facilitate sharing, collaboration, and transparancy with all who might benefit from the end product or reuse parts of its code - the term Open Project is used to describe this thought. 
-
-Motivated by these ideas, we built a prototype, tested it, and concluded that there was in fact some appetite for a new way to searth through and navigate the organization structure. Now, we have nearly completed the beta version of this product and are releasing all code used to create it.
+With a prototype build, testing with potential users showed demand for a new way to searth through and navigate the organization structure exists.  Work now focuses on completing the beta version of DOC as well as releasing all the code.
 
 # Motivation and Business Value
-As we examined existing tools that allow the navigation of GEDS data, the team noticed a few key areas that could be improved upon. Listed below are the areas for improvement, and how DOC addresses them.
+An examination of existing tools for navigating GEDS data revealed a few key areas that could be improved upon. Listed below are the areas for improvement, and how DOC addresses them.
 
 ## 1. Typos and Spelling Mistakes
 
