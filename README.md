@@ -2,8 +2,6 @@
     <a href="https://github.com/DSD-ESDC-EDSC/dynamic-org-chart/blob/master/README.fr.md">Français</a>
 </div>
 
-View as a [webpage](https://dsd-esdc-edsc.github.io/dynamic-org-chart/)
-
 # Project Overview
 
 The Dynamic Organizational Chart (DOC) provides users the ability to search derived org charts for many Government of Canada departments and is executed as an open project by the Data Science Division within the Chief Data Office of Employment and Social Development Canada (ESDC). It is built using the same dataset that underpins the [Government Electronic Directory Services (GEDS)](https://open.canada.ca/data/en/dataset/8ec4a9df-b76b-4a67-8f93-cdbc2e040098), which is updated every 24 hours and made available on the [Canada Open Data Portal](https://open.canada.ca/en/open-data) under the Government of Canada's [Open Government License](https://open.canada.ca/en/open-government-licence-canada). DOC consists of two major components:
@@ -11,7 +9,7 @@ The Dynamic Organizational Chart (DOC) provides users the ability to search deri
 1. Several programs that download and process the open GEDS dataset every 24 hours into a hierarchical format that can be used to link employees to organizational units and vise versa.
 2. A web application that, using the processed GEDS data, allows users to dynamically navigate the derived org charts as well as search the directory of business units and employees. The application makes it possible to cross reference these two information sources; users can search for employees/business units and see where they are on an org chart, or they can navigate the org chart and see which employees belong to a given business unit.
 
-DOC, once fully realized, makes the task of finding who works where and on what dynamic, visual, and more efficient.
+DOC, once fully realized, makes the task of finding who works where and on what, dynamic, visual, and more efficient.
 
 # History
 
@@ -34,7 +32,7 @@ This means that correct search results will appear even in the presence of small
 
 ## 2. No Central and Openly Available Government Org Charts
 
-> __Divisions and directorates have internal facing org charts and government departments sometimes have web pages outlining their  structure, however there does not appear to be an openly acccessible and navigatable central source for organizational charts.__
+> __Divisions and directorates have internal facing org charts and government departments sometimes have web pages outlining their  structure, however, there does not appear to be an openly acccessible and navigatable central source for organizational charts.__
 
 The web application for DOC features a dynamic, interative, and searchable organizational chart for the Canadian federal public service. The organization structure for the Canadian Federal Government is implicitly defined in the GEDS dataset, and the programs in DOC automatically extract this organization structure.
 
