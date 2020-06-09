@@ -102,18 +102,18 @@ digraph G {
 }'/> -->
 
 ## Open Source Software
-The code in this project developed by the Data Science team, which is being redistributed under the open source MIT License, processes GEDS data into a hierarchical format that can be consumed by Javascript's d3 data visualization library. Additionally, the data from this csv can be used to populate several tables in a SQL database. Between these two data sources (and with the help of Elasticsearch to index employee names and organizational units), it is possible to link employees to organizational structure, and vice versa.
+The code in this project developed by the Data Science team, which is being distributed under the open source MIT License, processes GEDS data into a hierarchical format that can be consumed by Javascript's d3 data visualization library. Additionally, the data from this csv can be used to populate several tables in a SQL database. Between these two data sources (and with the help of Elasticsearch to index employee names and organizational units), it is possible to link employees to organizational structure, and vice versa.
 
 The user interface is a [React](https://reactjs.org) application that makes use of Javascript's [d3](https://d3js.org) data visualization library to create the interactive org chart. The REST API is built on Python's [Flask](https://palletsprojects.com/p/flask/) microframework. The project makes use of [Elasticsearch](https://www.elastic.co/) as an open source search framework, and has used [SQLite](https://www.sqlite.org/index.html) as an open source relational database for development purposes. As an object relational mapper (ORM), [SQLAlchemy](https://www.sqlalchemy.org/) was used, so migration to a production database is adaptable to any of the flavours of SQL databases that are supported by SQLAlchemy.
 
-Many open source software and libraries were used to create DOC. Acknowledgement to these artifacts, along with their corresponding open licenses (where one was found), is listed below. Users are advised to consult original sources for official information.
+Many open source software and libraries were used to create DOC. Acknowledgement to these artifacts, along with their corresponding open licenses (where one was found), is listed below. Users are advised to consult original sources for official information, especially if they plan on re-distributing all or parts of these artifcats.
 
-Attribution statements for other software and code artifacts used:
+Attribution for software and code artifacts:
 - [Elasticsearch Docker Image](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html) - [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0)
 - [SQLite](https://sqlite.org/copyright.html) - no license found
 - [StackOverflow](https://stackoverflow.com/) - [Attribution-ShareAlike International Creative Commons License](https://creativecommons.org/licenses/by-sa/4.0/). Whenever significant snippets of code were borrowed directly from an answer, A link to the URL was posted in a docstring in the same file along with an acknowledgement giving credit to the original author.
 
-Attribution Statements for Python and the libraries used:
+Attribution for Python and related libraries:
 * All licenses here were obtained using the [pip-licenses](https://pypi.org/project/pip-licenses/) package (which itself is licensed under the MIT license).
 - [Python](https://docs.python.org/3/license.html) - Python Software License (PSF)
 - [pandas](https://github.com/pandas-dev/pandas/blob/master/LICENSE) - BSD license
@@ -127,7 +127,7 @@ Attribution Statements for Python and the libraries used:
 - [Flask-SQLAlchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/license/) - BSD-3-Clause
 - [flask-restx](https://flask-restx.readthedocs.io/en/latest/) - BSD-3-Clause
 
-Attribution Statements (JavaScript and the libraries used in this project):
+Attribution for JavaScript and reltated libraries:
 - [React](https://github.com/facebook/react/blob/master/LICENSE) - MIT
 - [react-fontawesome](https://github.com/FortAwesome/react-fontawesome/blob/master/LICENSE.txt) - MIT
 - [d3](https://d3js.org/) - BSD
