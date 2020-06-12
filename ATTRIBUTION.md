@@ -1,12 +1,11 @@
 
 # Attributions
-Attribution for open source software and code artifacts used in this project, along with their licenses and copyrights, are provided below. Please refer to the original licenses for further information about any of the open source software used in this project.
+Attribution for open source software and code artifacts used in this project, along with their licenses and copyrights, are provided below. Please refer to the linked original licenses for further information about.
 
 **Note:** the [pip-licenses](https://pypi.org/project/pip-licenses/) package (which itself is licensed under the MIT license) was used to extract the licenses for each python package used.
 
 
 ## [MIT License](https://opensource.org/licenses/MIT)
-
 ____
 Copyright \<YEAR> \<COPYRIGHT HOLDER>
 
@@ -17,6 +16,8 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ___
 
+The following software and code artificats are made available under the MIT License.
+
 **Python**
 
 - [urllib3](https://urllib3.readthedocs.io/en/latest/) - Copyright (c) 2008-2020 Andrey Petrov and contributors (see CONTRIBUTORS.txt)
@@ -24,8 +25,6 @@ ___
 - [pip-licenses](https://pypi.org/project/pip-licenses/) - Copyright (c) 2018 raimon
 - [Flask-Cors](https://flask-cors.readthedocs.io/en/latest/) - Copyright (C) 2016 Cory Dolphin, Olin College
 - [Flask-JWT-Extended](https://flask-jwt-extended.readthedocs.io/en/stable/) - Copyright (c) 2016 Landon
-
-
 
 **JavaScript/CSS**
 
@@ -43,8 +42,8 @@ ___
 - [resize-observer-polyfill](https://github.com/que-etc/resize-observer-polyfill/blob/master/LICENSE) - Copyright (c) 2016 Denis Rul
 - [styled-components](https://github.com/styled-components/styled-components/blob/master/LICENSE) - Copyright (c) 2016-present Glen Maddern and Maximilian Stoiber
 
-## [BSD 3-Clause License](https://opensource.org/licenses/BSD-3-Clause)
 
+## [BSD 3-Clause License](https://opensource.org/licenses/BSD-3-Clause)
 ___
 Note: This license has also been called the "New BSD License" or "Modified BSD License". See also the 2-clause BSD License.
 
@@ -60,6 +59,8 @@ Redistribution and use in source and binary forms, with or without modification,
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ___
+
+The following software and code artificats are made available under the BSD 3-Clause License.
 
 **Python**
 
@@ -77,8 +78,9 @@ ___
 
 - [d3](https://d3js.org/) - Copyright 2010-2017 Mike Bostock. All rights reserved.
 
+
 ## [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0)
-Listed in this section are open source software used not distributed under the MIT or BSD licenses.t licenses beside each item.
+
 
 **Elasticsearch**
 
