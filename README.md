@@ -106,39 +106,7 @@ The code in this project developed by the Data Science team, which is being dist
 
 The user interface is a [React](https://reactjs.org) application that makes use of Javascript's [d3](https://d3js.org) data visualization library to create the interactive org chart. The REST API is built on Python's [Flask](https://palletsprojects.com/p/flask/) microframework. The project makes use of [Elasticsearch](https://www.elastic.co/) as an open source search framework, and has used [SQLite](https://www.sqlite.org/index.html) as an open source relational database for development purposes. As an object relational mapper (ORM), [SQLAlchemy](https://www.sqlalchemy.org/) was used, so migration to a production database is adaptable to any of the flavours of SQL databases that are supported by SQLAlchemy.
 
-Many open source software and libraries were used to create DOC. Acknowledgement to these artifacts, along with their corresponding open licenses (where one was found), is listed below. Users are advised to consult original sources for official information, especially if they plan on re-distributing all or parts of these artifcats.
-
-Attribution for software and code artifacts:
-- [Elasticsearch Docker Image](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html) - [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0)
-- [SQLite](https://sqlite.org/copyright.html) - no license found
-- [StackOverflow](https://stackoverflow.com/) - [Attribution-ShareAlike International Creative Commons License](https://creativecommons.org/licenses/by-sa/4.0/). Whenever significant snippets of code were borrowed directly from an answer, A link to the URL was posted in a docstring in the same file along with an acknowledgement giving credit to the original author.
-
-Attribution for Python and related libraries:
-* All licenses here were obtained using the [pip-licenses](https://pypi.org/project/pip-licenses/) package (which itself is licensed under the MIT license).
-- [Python](https://docs.python.org/3/license.html) - Python Software License (PSF)
-- [pandas](https://github.com/pandas-dev/pandas/blob/master/LICENSE) - BSD license
-- [urllib3](https://urllib3.readthedocs.io/en/latest/) - MIT
-- [SQLAlchemy](https://docs.sqlalchemy.org/en/13/copyright.html) - MIT
-- [elasticsearch python client](https://elasticsearch-py.readthedocs.io/en/master/) - Apache 2.0 License
-- [pip-licenses](https://pypi.org/project/pip-licenses/) - MIT
-- [Flask](https://flask.palletsprojects.com/en/1.1.x/license/#source-license) - BSD-3-Clause
-- [Flask-Cors](https://flask-cors.readthedocs.io/en/latest/) - MIT
-- [Flask-JWT-Extended](https://flask-jwt-extended.readthedocs.io/en/stable/) - MIT
-- [Flask-SQLAlchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/license/) - BSD-3-Clause
-- [flask-restx](https://flask-restx.readthedocs.io/en/latest/) - BSD-3-Clause
-
-Attribution for JavaScript and reltated libraries:
-- [React](https://github.com/facebook/react/blob/master/LICENSE) - MIT
-- [react-fontawesome](https://github.com/FortAwesome/react-fontawesome/blob/master/LICENSE.txt) - MIT
-- [d3](https://d3js.org/) - BSD
-- [react-bootstrap](https://github.com/react-bootstrap/react-bootstrap/blob/master/LICENSE) - MIT ([Bootstrap](https://getbootstrap.com/docs/4.0/about/license/)
-- [react-dom](https://github.com/motorcycle/react-dom/blob/master/LICENSE.md) - MIT
-- [react-router](https://github.com/ReactTraining/react-router/blob/master/LICENSE) - MIT
-- [react-scripts](https://github.com/GraphCMS/react-scripts/blob/master/LICENSE) - MIT
-- [react-tooltip](https://github.com/wwayne/react-tooltip/blob/master/LICENSE) - MIT
-- [axios](https://github.com/axios/axios/blob/master/LICENSE) - MIT
-- [resize-observer-polyfill](https://github.com/que-etc/resize-observer-polyfill/blob/master/LICENSE) - MIT
-- [styled-components](https://github.com/styled-components/styled-components/blob/master/LICENSE) - MIT
+The creation of DOC relied extensively on the use of open source software. Acknowledgement and attribution to these open source tools, along with their corresponding open licenses (where one was found), can be found in the [ATTRIBUTION.md](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart/blob/master/ATTRIBUTION.md) file in this repository. Users are advised to consult original sources for official information, especially if they plan on re-distributing all or parts of these code artifacts.
 
 ## Open Data Sources
 This entire project is built off of the [GEDS dataset](https://open.canada.ca/data/en/dataset/8ec4a9df-b76b-4a67-8f93-cdbc2e040098), which is made available under the Government of Canada's open data license - [Open Government Licence - Canada](https://open.canada.ca/en/open-government-licence-canada). Every 24 hours, this dataset is updated on the Government of Canada's [Open Data Portal](https://open.canada.ca/en/open-data) as a single csv file.
