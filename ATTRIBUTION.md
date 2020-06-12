@@ -1,12 +1,6 @@
 
 # Attributions
-This document provides attribution for all of the open source software and code artifacts that were used in this project along with their licenses.
-
-We include boilerplate copies of the MIT and BSD 3-Clause licenses here for convenience and provide links to the license for each open source artifact used. 
-
-We also include the copyright statement of the original authors for each license as it appeared at the time of writing.
-
-Please refer to the original licenses for further information about any of the open source software used in this project.
+Attribution for open source software and code artifacts used in this project, along with their licenses and copyrights, are provided below. Please refer to the original licenses for further information about any of the open source software used in this project.
 
 **Note:** the [pip-licenses](https://pypi.org/project/pip-licenses/) package (which itself is licensed under the MIT license) was used to extract the licenses for each python package used.
 
@@ -83,9 +77,10 @@ ___
 
 - [d3](https://d3js.org/) - Copyright 2010-2017 Mike Bostock. All rights reserved.
 
-## Attributions Under Other Licenses
-In this section, we group together all other open source software used that is not distributed under the MIT or BSD licenses. We list the relevant licenses beside each item.
+## [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0)
+Listed in this section are open source software used not distributed under the MIT or BSD licenses.t licenses beside each item.
 
-- [Elasticsearch Docker Image](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html) - [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0)
-- [Elasticsearch Python Client](https://elasticsearch-py.readthedocs.io/en/master/) - [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0)
-- [SQLite](https://sqlite.org/copyright.html) - The SQLite source code is in the public domain and is free to everyone to use for any purpose.
+**Elasticsearch**
+
+- [Elasticsearch Docker Image](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html) 
+- [Elasticsearch Python Client](https://elasticsearch-py.readthedocs.io/en/master/)
