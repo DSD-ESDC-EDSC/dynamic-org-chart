@@ -146,3 +146,4 @@ The following software and code artificats are made available under the Apache 2
 
 - [Elasticsearch Docker Image](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html) 
 - [Elasticsearch Python Client](https://elasticsearch-py.readthedocs.io/en/master/)
+____
