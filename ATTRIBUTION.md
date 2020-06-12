@@ -5,6 +5,7 @@ Attribution for open source software and code artifacts used in this project, al
 **Note:** the [pip-licenses](https://pypi.org/project/pip-licenses/) package (which itself is licensed under the MIT license) was used to extract the licenses for each python package used.
 
 
+
 ## [MIT License](https://opensource.org/licenses/MIT)
 ____
 Copyright \<YEAR> \<COPYRIGHT HOLDER>
@@ -41,6 +42,7 @@ The following software and code artificats are made available under the MIT Lice
 - [axios](https://github.com/axios/axios/blob/master/LICENSE) - Copyright (c) 2014-present Matt Zabriskie
 - [resize-observer-polyfill](https://github.com/que-etc/resize-observer-polyfill/blob/master/LICENSE) - Copyright (c) 2016 Denis Rul
 - [styled-components](https://github.com/styled-components/styled-components/blob/master/LICENSE) - Copyright (c) 2016-present Glen Maddern and Maximilian Stoiber
+
 
 
 ## [BSD 3-Clause License](https://opensource.org/licenses/BSD-3-Clause)
