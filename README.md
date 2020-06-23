@@ -106,15 +106,17 @@ The code in this project developed by the Data Science team processes GEDS data 
 
 The user interface is a [React](https://reactjs.org) application that makes use of Javascript's [d3](https://d3js.org) data visualization library to create the interactive org chart. The REST API is built on Python's [Flask](https://palletsprojects.com/p/flask/) microframework. The project makes use of [Elasticsearch](https://www.elastic.co/) as an open source search framework, and has used [SQLite](https://www.sqlite.org/index.html) as an open source relational database for development purposes. As an object relational mapper (ORM), [SQLAlchemy](https://www.sqlalchemy.org/) was used, so migration to a production database is adaptable to any of the flavours of SQL databases that are supported by SQLAlchemy.
 
-The creation of DOC relied extensively on the use of open source software. Acknowledgement and attribution to these open source tools, along with their corresponding open licenses (where one was found), can be found in the [ATTRIBUTION.md](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart/blob/master/ATTRIBUTION.md) file in this repository. Users are advised to consult original sources for official information, especially if they plan on re-distributing all or parts of these code artifacts.
 
 ## Input Data Sources
 This entire project is built off of **open data**, primarily the [GEDS dataset](https://open.canada.ca/data/en/dataset/8ec4a9df-b76b-4a67-8f93-cdbc2e040098), which is made available under the Government of Canada's open data license - [Open Government Licence - Canada](https://open.canada.ca/en/open-government-licence-canada). Every 24 hours, this dataset is updated on the Government of Canada's [Open Data Portal](https://open.canada.ca/en/open-data) as a single csv file.
 
-# License - dynamic-org-chart
+# License
 Unless otherwise noted, program source code of this project is covered under Crown Copyright, Government of Canada, and is distributed under the [MIT License](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart/blob/master/LICENSE.md).
 
 The Canada wordmark and related graphics associated with this distribution are protected under trademark law and copyright law. No permission is granted to use them outside the parameters of the Government of Canada's corporate identity program. For more information, see [Federal identity requirements](https://www.canada.ca/en/treasury-board-secretariat/topics/government-communications/federal-identity-requirements.html).
+
+# Attribution
+The creation of DOC relied extensively on the use of open source software. Acknowledgement and attribution to these open source tools, along with their corresponding open licenses (where one was found), can be found in the [ATTRIBUTION.md](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart/blob/master/ATTRIBUTION.md) file in this repository. Users are advised to consult original sources for official information, especially if they plan on re-distributing all or parts of these code artifacts.
 
 # How to Contribute
 Instructions for how to contribute can be found in the CONTRIBUTING.md file.
