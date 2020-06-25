@@ -113,9 +113,6 @@ L'interface utilisateur est une application [React](https://reactjs.org) qui uti
 ## Sources de données d'entrée
 L'ensemble de ce projet est basé sur des **données ouvertes**, principalement la [base de données SAGE] (https://ouvert.canada.ca/data/fr/dataset/8ec4a9df-b76b-4a67-8f93-cdbc2e040098), qui est disponible sous la licence de données ouvertes du gouvernement du Canada - [Licence du gouvernement ouvert – Canada] (https://ouvert.canada.ca/fr/licence-du-gouvernement-ouvert-canada). Toutes les 24 heures, cet ensemble de données est mis à jour sur le [Portail de données ouvertes] du gouvernement du Canada (https://ouvert.canada.ca/fr/donnees-ouvertes) sous la forme d'un fichier csv unique.
 
-
-TEST TEST TEST
-
 # Licence
 Sauf indication contraire, le code source de ce projet est protégé par le droit d'auteur de la Couronne du gouvernement du Canada et distribué sous la [licence MIT](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart/blob/master/LICENSE.md).
 
