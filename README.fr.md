@@ -71,22 +71,21 @@ Les utilisateurs peuvent trouver des employés grâce à une recherche en texte 
 
 ![Search Employees #1](gif/name-search-1.gif)
 
+### Recherche d'unités commerciales 
+Cette fonctionnalité est mise en œuvre en arrière-plan, mais pas encore en avant-plan. Une fois terminée, elle fonctionnera de la même manière que la recherche d'employés, mais pour les unités commerciales.
 
-test test test
 
+### Voir Qui travaille dans une unité commerciale donnée 
+Il est possible d'effectuer une recherche avec DOC dans le sens inverse de ce qui est mentionné ci-dessus. Si l'on donne une unité commerciale, l'utilisateur peut voir toutes les personnes qui travaillent dans cette unité. Les cas d'utilisation pour cela comprennent, par exemple, le fait de vouloir savoir qui d'autre travaille dans l'équipe d'un employé ou de vouloir trouver le responsable d'un employé. Le GIF ci-dessous illustre, toujours en utilisant un membre de l'équipe de développement du DOC, une recherche pour "__brown, collin__" et identifie correctement les membres de son équipe en cliquant sur le bouton "__See the team__".
 
-### Search Business Units 
-This functionality is implemented in the back-end but not yet in the front-end. Once complete it will funciton in the same way as one searches for employees but for business units.
-
-### See Who Works in a Given Business Unit 
-It is possible to search with DOC in the opposite direction to what is mentioned above. Given a business unit, the user can see all of the people who work in that unit. Use cases for this include, for example, wanting to know who else works on an employee's team or wanting to find the manager of an employee. The GIF below illustrates, again using a member of the DOC development team, a search for "__brown, collin__" and correctly identifies his team members when clicking the "__See the team__" button.
 ![Search Employees #4](gif/name-search-4.gif)
 
-# Technical Details
-The next sections details the architecture, tech stack (open source software), and open data used in DOC.
+# Détails techniques
+Les sections suivantes détaillent l'architecture, la pile technique (logiciels à source ouverte) et les données ouvertes utilisées dans DOC.
 
-## High-level Architecture
-This repository links together several repositories that form that DOC Open Project. The related repositories can be found below:
+
+## Architecture de haut niveau
+Ce dépôt relie plusieurs dépôts qui forment le DOC Open Project. Les dépôts connexes se trouvent ci-dessous :
 
 - [User Interface (React and d3)](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart-ui)
 - [Back-end API (Flask) for data on employees and organizations](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart-api)
@@ -107,13 +106,22 @@ digraph G {
 "Front End" -> "Elasticsearch";
 }'/> -->
 
-## Input Software
-The code in this project developed by the Data Science team processes GEDS data into a hierarchical format that can be consumed by Javascript's d3 data visualization library. Additionally, the data from this csv can be used to populate several tables in a SQL database. Between these two data sources (and with the help of Elasticsearch to index employee names and organizational units), it is possible to link employees to organizational structure, and vice versa.
 
-The user interface is a [React](https://reactjs.org) application that makes use of Javascript's [d3](https://d3js.org) data visualization library to create the interactive org chart. The REST API is built on Python's [Flask](https://palletsprojects.com/p/flask/) microframework. The project makes use of [Elasticsearch](https://www.elastic.co/) as an open source search framework, and has used [SQLite](https://www.sqlite.org/index.html) as an open source relational database for development purposes. As an object relational mapper (ORM), [SQLAlchemy](https://www.sqlalchemy.org/) was used, so migration to a production database is adaptable to any of the flavours of SQL databases that are supported by SQLAlchemy.
+## Logiciel de saisie
+Le code de ce projet développé par l'équipe de la science des données traite les données SAGE dans un format hiérarchique qui peut être consommé par la bibliothèque de visualisation de données d3 de Javascript. De plus, les données de ce csv peuvent être utilisées pour remplir plusieurs tables dans une base de données SQL. Entre ces deux sources de données (et avec l'aide d'Elasticsearch pour indexer les noms des employés et des unités organisationnelles), il est possible de relier les employés à la structure organisationnelle, et vice versa.
 
-## Input Data Sources
-This entire project is built off of **open data**, primarily the [GEDS dataset](https://open.canada.ca/data/en/dataset/8ec4a9df-b76b-4a67-8f93-cdbc2e040098), which is made available under the Government of Canada's open data license - [Open Government Licence - Canada](https://open.canada.ca/en/open-government-licence-canada). Every 24 hours, this dataset is updated on the Government of Canada's [Open Data Portal](https://open.canada.ca/en/open-data) as a single csv file.
+L'interface utilisateur est une application [React](https://reactjs.org) qui utilise la bibliothèque de visualisation de données Javascript [d3](https://d3js.org) pour créer l'organigramme interactif. L'API REST est construite sur la microstructure [Flask](https://palletsprojects.com/p/flask/) de Python. Le projet utilise [Elasticsearch](https://www.elastic.co/) comme cadre de recherche à source ouverte, et a utilisé [SQLite](https://www.sqlite.org/index.html) comme base de données relationnelle à source ouverte à des fins de développement. Le [SQLAlchemy](https://www.sqlalchemy.org/) a été utilisé comme mappeur relationnel objet (ORM), de sorte que la migration vers une base de données de production est adaptable à toutes les variantes de bases de données SQL prises en charge par SQLAlchemy.
+
+
+
+
+## Sources de données d'entrée
+L'ensemble de ce projet est basé sur des **données ouvertes**, principalement la [base de données SAGE] (https://ouvert.canada.ca/data/fr/dataset/8ec4a9df-b76b-4a67-8f93-cdbc2e040098), qui est disponible sous la licence de données ouvertes du gouvernement du Canada - [Licence du gouvernement ouvert – Canada] (https://ouvert.canada.ca/fr/licence-du-gouvernement-ouvert-canada). Toutes les 24 heures, cet ensemble de données est mis à jour sur le [Portail de données ouvertes] du gouvernement du Canada (https://ouvert.canada.ca/fr/donnees-ouvertes) sous la forme d'un fichier csv unique.
+
+
+
+
+TEST TEST TEST
 
 # License
 Unless otherwise noted, program source code of this project is covered under Crown Copyright, Government of Canada, and is distributed under the [MIT License](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart/blob/master/LICENSE.md).
