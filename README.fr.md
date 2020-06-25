@@ -124,8 +124,6 @@ Le mot-symbole « Canada » et les éléments graphiques connexes liés à cette
 # Attribution
 Ce projet ne serait pas possible sans la disponibilité et l'utilisation de logiciels à source ouverte. La reconnaissance et l'attribution des outils open source utilisés, ainsi que les licences ouvertes correspondantes (lorsqu'il y en a une), se trouvent dans le fichier [ATTRIBUTION.md](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart/blob/master/ATTRIBUTION.md) de ce dépôt. Il est conseillé aux utilisateurs de consulter les sources originales pour obtenir des informations officielles, en particulier s'ils prévoient de redistribuer tout ou partie de ces artefacts de code.
 
-This project would not be possible without the availability and use of open source software. Acknowledgement and attribution to the open source tools used, along with their corresponding open licenses (where one was found), can be found in the [ATTRIBUTION.md](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart/blob/master/ATTRIBUTION.md) file in this repository. Users are advised to consult original sources for official information, especially if they plan on re-distributing all or parts of these code artifacts.
-
 # Comment contribuer
 Les instructions sur la façon de contribuer se trouvent dans le document [CONTRIBUTING.md](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart/blob/master/CONTRIBUTING.md).
 
