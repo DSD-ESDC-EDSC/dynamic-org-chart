@@ -74,7 +74,6 @@ Les utilisateurs peuvent trouver des employés grâce à une recherche en texte 
 ### Recherche d'unités commerciales 
 Cette fonctionnalité est mise en œuvre en arrière-plan, mais pas encore en avant-plan. Une fois terminée, elle fonctionnera de la même manière que la recherche d'employés, mais pour les unités commerciales.
 
-
 ### Voir Qui travaille dans une unité commerciale donnée 
 Il est possible d'effectuer une recherche avec DOC dans le sens inverse de ce qui est mentionné ci-dessus. Si l'on donne une unité commerciale, l'utilisateur peut voir toutes les personnes qui travaillent dans cette unité. Les cas d'utilisation pour cela comprennent, par exemple, le fait de vouloir savoir qui d'autre travaille dans l'équipe d'un employé ou de vouloir trouver le responsable d'un employé. Le GIF ci-dessous illustre, toujours en utilisant un membre de l'équipe de développement du DOC, une recherche pour "__brown, collin__" et identifie correctement les membres de son équipe en cliquant sur le bouton "__See the team__".
 
@@ -82,7 +81,6 @@ Il est possible d'effectuer une recherche avec DOC dans le sens inverse de ce qu
 
 # Détails techniques
 Les sections suivantes détaillent l'architecture, la pile technique (logiciels à source ouverte) et les données ouvertes utilisées dans DOC.
-
 
 ## Architecture de haut niveau
 Ce dépôt relie plusieurs dépôts qui forment le DOC Open Project. Les dépôts connexes se trouvent ci-dessous :
@@ -112,25 +110,22 @@ Le code de ce projet développé par l'équipe de la science des données traite
 
 L'interface utilisateur est une application [React](https://reactjs.org) qui utilise la bibliothèque de visualisation de données Javascript [d3](https://d3js.org) pour créer l'organigramme interactif. L'API REST est construite sur la microstructure [Flask](https://palletsprojects.com/p/flask/) de Python. Le projet utilise [Elasticsearch](https://www.elastic.co/) comme cadre de recherche à source ouverte, et a utilisé [SQLite](https://www.sqlite.org/index.html) comme base de données relationnelle à source ouverte à des fins de développement. Le [SQLAlchemy](https://www.sqlalchemy.org/) a été utilisé comme mappeur relationnel objet (ORM), de sorte que la migration vers une base de données de production est adaptable à toutes les variantes de bases de données SQL prises en charge par SQLAlchemy.
 
-
-
-
 ## Sources de données d'entrée
 L'ensemble de ce projet est basé sur des **données ouvertes**, principalement la [base de données SAGE] (https://ouvert.canada.ca/data/fr/dataset/8ec4a9df-b76b-4a67-8f93-cdbc2e040098), qui est disponible sous la licence de données ouvertes du gouvernement du Canada - [Licence du gouvernement ouvert – Canada] (https://ouvert.canada.ca/fr/licence-du-gouvernement-ouvert-canada). Toutes les 24 heures, cet ensemble de données est mis à jour sur le [Portail de données ouvertes] du gouvernement du Canada (https://ouvert.canada.ca/fr/donnees-ouvertes) sous la forme d'un fichier csv unique.
 
 
-
-
 TEST TEST TEST
 
-# License
-Unless otherwise noted, program source code of this project is covered under Crown Copyright, Government of Canada, and is distributed under the [MIT License](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart/blob/master/LICENSE.md).
+# Licence
+Sauf indication contraire, le code source de ce projet est protégé par le droit d'auteur de la Couronne du gouvernement du Canada et distribué sous la [licence MIT](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart/blob/master/LICENSE.md).
 
-The Canada wordmark and related graphics associated with this distribution are protected under trademark law and copyright law. No permission is granted to use them outside the parameters of the Government of Canada's corporate identity program. For more information, see [Federal identity requirements](https://www.canada.ca/en/treasury-board-secretariat/topics/government-communications/federal-identity-requirements.html).
+Le mot-symbole « Canada » et les éléments graphiques connexes liés à cette distribution sont protégés en vertu des lois portant sur les marques de commerce et le droit d'auteur. Aucune autorisation n'est accordée pour leur utilisation à l'extérieur des paramètres du programme de coordination de l'image de marque du gouvernement du Canada. Pour obtenir davantage de renseignements à ce sujet, veuillez consulter les [Exigences pour l'image de marque](https://www.canada.ca/fr/secretariat-conseil-tresor/sujets/communications-gouvernementales/exigences-image-marque.html).
 
 # Attribution
+Ce projet ne serait pas possible sans la disponibilité et l'utilisation de logiciels à source ouverte. La reconnaissance et l'attribution des outils open source utilisés, ainsi que les licences ouvertes correspondantes (lorsqu'il y en a une), se trouvent dans le fichier [ATTRIBUTION.md](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart/blob/master/ATTRIBUTION.md) de ce dépôt. Il est conseillé aux utilisateurs de consulter les sources originales pour obtenir des informations officielles, en particulier s'ils prévoient de redistribuer tout ou partie de ces artefacts de code.
+
 This project would not be possible without the availability and use of open source software. Acknowledgement and attribution to the open source tools used, along with their corresponding open licenses (where one was found), can be found in the [ATTRIBUTION.md](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart/blob/master/ATTRIBUTION.md) file in this repository. Users are advised to consult original sources for official information, especially if they plan on re-distributing all or parts of these code artifacts.
 
-# How to Contribute
-Instructions for how to contribute can be found in the [CONTRIBUTING.md](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart/blob/master/CONTRIBUTING.md) file.
+# Comment contribuer
+Les instructions sur la façon de contribuer se trouvent dans le document [CONTRIBUTING.md](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart/blob/master/CONTRIBUTING.md).
 
