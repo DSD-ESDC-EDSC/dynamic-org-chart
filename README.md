@@ -121,4 +121,4 @@ The Canada wordmark and related graphics associated with this distribution are p
 This project would not be possible without the availability and use of open source software. Acknowledgement and attribution to the open source tools used, along with their corresponding open licenses (where one was found), can be found in the [ATTRIBUTION.md](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart/blob/master/ATTRIBUTION.md) file in this repository. Users are advised to consult original sources for official information, especially if they plan on re-distributing all or parts of these code artifacts.
 
 # How to Contribute
-Instructions for how to contribute can be found in the CONTRIBUTING.md file.
+Instructions for how to contribute can be found in the [CONTRIBUTING.md](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart/blob/master/CONTRIBUTING.md) file.
