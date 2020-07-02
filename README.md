@@ -13,6 +13,61 @@ The Dynamic Organizational Chart (DOC) provides users the ability to search deri
 
 DOC, once fully realized, makes the task of finding who works where and on what, dynamic, visual, and more efficient.
 
+## Start-up Instructions
+1. Pull the elasticsearch docker image and run elasticsearch as a docker container.
+```
+docker pull docker.elastic.co/elasticsearch/elasticsearch:6.5.1
+```
+```
+docker run -p 9200:9200 -p 9300:9300 -e "http.cors.enabled=true" -e "http.cors.allow-origin=*" -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:6.5.1
+```
+### [dynamic-org-chart-scripts](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart-scripts)
+2. Clone the ```dynamic-org-chart-scripts``` repository to a folder on your computer.
+```
+git clone https://github.com/DSD-ESDC-EDSC/dynamic-org-chart-scripts
+```
+3. In a new terminal, create and activate the virtual environment in the root of the ```dynamic-org-chart-scripts``` folder.
+```
+conda env create -f environment.yml
+```
+```
+conda activate ./venv
+```
+4. Start the main script in the ```process-geds-data``` repository by running the following command from within the virtual environment in the project root:
+```
+python start.py
+```
+### [dynamic-org-chart-api](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart-api)
+5. In a separate terminal, clone the ```dynamic-org-chart-api``` repository to another folder on your computer.
+```
+git clone https://github.com/DSD-ESDC-EDSC/dynamic-org-chart-api
+```
+6. Initialize the application (this creates a local configuration and sets up the virtual environment).
+```
+./app.sh -i
+```
+7. Activate the virtual environment and start up the API
+```
+conda activate ./api_env
+```
+```
+python manage.py run
+```
+### [dynamic-org-chart-ui](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart-ui)
+8. In another terminal, clone ```dynamic-org-chart-ui``` into another folder on your computer.
+```
+git clone https://github.com/DSD-ESDC-EDSC/dynamic-org-chart-ui
+```
+9. Install all npm packages in the ```package.json``` file and start the react dev server. I.e. run
+```
+npm install
+```
+in the project root, then run
+```
+npm start
+```
+also in the project root.
+
 ## History
 
 DOC began as an offshoot of a related ChatBot project aimed to improve the efficiency of new employee onboarding. During testing on the ChatBot, many new employees pointed out that they couldn't find any clear solution to identify where other employees work and how different parts of the organization relate to eachother. Based on this finding, exploration began into creating an easy way for civil serants to search for other employees and business units and then automatically link this information to the organization's structure. Furthermore, so as to increase the availabilty and access of the tool, emphasis was placed on using open source software and open data in order to facilitate sharing, collaboration, and transparancy with all who might benefit from the end product or reuse parts of its code - the term Open Project is used to describe this thought. 

@@ -13,6 +13,61 @@ L'organigramme dynamique (DOC) offre aux utilisateurs la possibilité de recherc
 
 DOC, une fois pleinement réalisé, rend la tâche de trouver qui travaille où et sur quoi, dynamique, visuelle et plus efficace.
 
+## Instructions de démarrage
+
+1. Tirez l'image docker pour elasticsearch et exécutez le comme un conteneur docker:
+```
+docker pull docker.elastic.co/elasticsearch/elasticsearch:6.5.1
+```
+```
+docker run -p 9200:9200 -p 9300:9300 -e "http.cors.enabled=true" -e "http.cors.allow-origin=*" -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:6.5.1
+```
+### [dynamic-org-chart-scripts](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart-scripts)
+2. Git clone le repositoire ```dynamic-org-chart-scripts``` dans un répertoire sur votre ordinateur.
+```
+git clone https://github.com/DSD-ESDC-EDSC/dynamic-org-chart-scripts
+```
+3. Dans un nouveau terminal, créer et activer l'environnement virtuel python dans le root de la répertoire ```dynamic-org-chart-scripts```.
+```
+conda env create -f environment.yml
+```
+```
+conda activate ./venv
+```
+4. Lancez le script principal dans le repositoire ```process-geds-data``` et exécutez ce qui suit de la environnement virtuel python:
+```
+python start.py
+```
+### [dynamic-org-chart-api](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart-api)
+5. Dans un autre terminal, git clone le repositoire ```dynamic-org-chart-api``` dans un autre répertoire sur votre ordinateur.
+```
+git clone https://github.com/DSD-ESDC-EDSC/dynamic-org-chart-api
+```
+6. Initialisez l'application (cette crée un configuration locale et crée le python virtual environment)
+```
+./app.sh -i
+```
+7. Activez l'environnement virtuel python et démarrez l'API.
+```
+conda activate ./api_env
+```
+```
+python manage.py run
+```
+### [dynamic-org-chart-ui](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart-ui)
+8. Dans un autre terminal, git clone ```dynamic-org-chart-ui``` dans un autre répertoire sur votre ordinateur.
+```
+git clone https://github.com/DSD-ESDC-EDSC/dynamic-org-chart-ui
+```
+9. Installez tous les paquets dans le fichier ```package.json``` et démarrez l'application React.
+```
+npm install
+```
+```
+npm start
+```
+Les deux instructions doivent être exécutez de la root de la directory projet.
+
 ## Histoire
 
 Le DOC a commencé comme une ramification d'un projet ChatBot connexe visant à améliorer l'efficacité de l'embarquement des nouveaux employés. Lors des tests sur le ChatBot, de nombreux nouveaux employés ont fait remarquer qu'ils ne trouvaient pas de solution claire pour identifier où travaillent les autres employés et comment les différentes parties de l'organisation sont liées les unes aux autres. Sur la base de cette constatation, on a commencé à créer un moyen facile pour les fonctionnaires de rechercher d'autres employés et unités commerciales, puis de relier automatiquement ces informations à la structure de l'organisation. En outre, afin d'accroître la disponibilité et l'accès à l'outil, l'accent a été mis sur l'utilisation de logiciels et de données libres afin de faciliter le partage, la collaboration et la transparence avec tous ceux qui pourraient bénéficier du produit final ou réutiliser des parties de son code - le terme "projet ouvert" est utilisé pour décrire cette idée. 
