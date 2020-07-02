@@ -13,9 +13,9 @@ L'organigramme dynamique (DOC) offre aux utilisateurs la possibilité de recherc
 
 DOC, une fois pleinement réalisé, rend la tâche de trouver qui travaille où et sur quoi, dynamique, visuelle et plus efficace.
 
-## Instructions de Démarrage
+## Instructions de démarrage
 
-1. Tirez le elasticsearch docker image et exécutez elasticsearch comme un docker container:
+1. Tirez l'image docker pour elasticsearch et exécutez le comme un conteneur docker:
 ```
 docker pull docker.elastic.co/elasticsearch/elasticsearch:6.5.1
 ```
@@ -23,23 +23,23 @@ docker pull docker.elastic.co/elasticsearch/elasticsearch:6.5.1
 docker run -p 9200:9200 -p 9300:9300 -e "http.cors.enabled=true" -e "http.cors.allow-origin=*" -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:6.5.1
 ```
 ### [dynamic-org-chart-scripts](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart-scripts)
-2. Git clone le repositoire ```dynamic-org-chart-scripts``` dans un directory sur votre ordinateur.
+2. Git clone le repositoire ```dynamic-org-chart-scripts``` dans un répertoire sur votre ordinateur.
 ```
 git clone https://github.com/DSD-ESDC-EDSC/dynamic-org-chart-scripts
 ```
-3. Dans un nouveau terminal, créer et activer le python virtual environment dans le root de la ```dynamic-org-chart-scripts``` directory.
+3. Dans un nouveau terminal, créer et activer l'environnement virtuel python dans le root de la répertoire ```dynamic-org-chart-scripts```.
 ```
 conda env create -f environment.yml
 ```
 ```
 conda activate ./venv
 ```
-4. Lancez le script principal dans le repositoire ```process-geds-data``` et exécutez  ce qui suit de la python virtual environment:
+4. Lancez le script principal dans le repositoire ```process-geds-data``` et exécutez ce qui suit de la environnement virtuel python:
 ```
 python start.py
 ```
 ### [dynamic-org-chart-api](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart-api)
-5. Dans un autre terminal, git clone le repositoire ```dynamic-org-chart-api``` dans un autre directory sur votre ordinateur.
+5. Dans un autre terminal, git clone le repositoire ```dynamic-org-chart-api``` dans un autre répertoire sur votre ordinateur.
 ```
 git clone https://github.com/DSD-ESDC-EDSC/dynamic-org-chart-api
 ```
@@ -47,7 +47,7 @@ git clone https://github.com/DSD-ESDC-EDSC/dynamic-org-chart-api
 ```
 ./app.sh -i
 ```
-7. Activez le python virtual environment et démarrez l'API.
+7. Activez l'environnement virtuel python et démarrez l'API.
 ```
 conda activate ./api_env
 ```
@@ -55,7 +55,7 @@ conda activate ./api_env
 python manage.py run
 ```
 ### [dynamic-org-chart-ui](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart-ui)
-8. Dans un autre terminal, git clone ```dynamic-org-chart-ui``` dans un autre directory sur votre ordinateur.
+8. Dans un autre terminal, git clone ```dynamic-org-chart-ui``` dans un autre répertoire sur votre ordinateur.
 ```
 git clone https://github.com/DSD-ESDC-EDSC/dynamic-org-chart-ui
 ```
